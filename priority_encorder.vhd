@@ -1,4 +1,4 @@
---8/3 encoder
+-- 8/3 encoder
 
 library ieee;
 use ieee.std_logic_1164.all;
