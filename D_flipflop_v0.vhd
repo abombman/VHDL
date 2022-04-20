@@ -28,6 +28,7 @@ begin
         Q <= tmp;
         Q_ps <= tmp;
     end process;
+end behav_D_ff;
     
 -- 在process中，最好使用变量。由于变量是局部的，因而声明后，可能需要进行值传递。process外都定义的信号，具有全局变量的性质，与C语言中的地址传值很相像，注意26至29行。
 -- Q_ps信号声明应该不能省略，因为在26行应该不能使用 tmp := Q ，因为Q的type是IN，除非将Q的type声明为BUFFER，但Buffer端口能否被外部实体读取，有什么限制？
